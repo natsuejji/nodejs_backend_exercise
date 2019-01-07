@@ -1,0 +1,30 @@
+ul{
+    list-style: none
+}
+.decklist-item{
+    border-radius: 10px;
+    color:#ffffff;
+}
+.decklist-item-id{
+    display: none;
+}
+#decklist{
+    padding-left: 0%;
+    
+}
+.navbar{
+    border-radius:0px 0px 10px 10px; 
+}
+.mycardbody{
+    border-radius:10px;
+    color:black;
+    size: 75%
+}
+.card-item-id{
+    display: none;
+}
+
+#card_maxAmount{
+    display: none;
+}
+

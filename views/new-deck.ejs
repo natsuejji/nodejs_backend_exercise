@@ -1,0 +1,24 @@
+<% include header %>
+
+<div class="container">
+  <% include nav %>
+</div>
+<div class="container-fluid row mt-3" style="color:white">
+    <div class="col-md-3">
+        <% include searchOption %> 
+    </div>
+
+    <div class="col-md-6 bg-dark p-5" style="border-radius:10px;color:black">
+        <h1 style="color:white">卡片列表</h1>
+        <div id="cardList" class="card-deck text-center row" style="border-radius:10px"></div>
+    </div>
+    <div class="col-md-3">
+        <% include deckDetail %>
+
+    </div>
+</div>
+<script>  
+    var seleClass = <%-"'"%><%- seleClass %><%-"'"%>;
+</script>
+<script src="/js/createDeck.js"></script>
+<% include footer %>

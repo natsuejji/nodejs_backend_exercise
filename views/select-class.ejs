@@ -1,0 +1,26 @@
+<% include header %>
+
+<div class="container" >
+    <% include nav %>
+    <h1 class="m-5 p-3 bg-dark" style="text-align:center; color:white; border-radius: 10px">職業選擇</h1>
+    <form class="m-5 p-3 bg-dark" style="text-align:center; color:white; border-radius: 10px">
+        <img src="image/class/Forestcraft.png" class="h-75 w-75" id="classImg"></img>
+        <div class="form-group mt-3 mb-3">
+            <select name="class" class="form-control" id= "classSelect">
+                <option selected="selected" value='Forestcraft'>妖精</option>
+                <option value='Swordcraft'>皇家</option> 
+                <option value='Shadowcraft'>死靈</option> 
+                <option value='Runecraft'>巫師</option> 
+                <option value='Dragoncraft'>龍族</option> 
+                <option value='Havencraft'>主教</option> 
+                <option value='Bloodcraft'>吸血鬼</option> 
+                <option value='Portalcraft'>復仇者</option>
+            </select>
+        </div>
+        <a id="create-deck" class="btn btn-secondary">創建牌組</a>
+
+    </form>
+        
+</div>
+<script src="/js/classSelect.js"></script>
+<% include footer %>
