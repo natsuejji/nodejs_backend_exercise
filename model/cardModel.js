@@ -26,7 +26,7 @@ exports.findCardByName=function(callback, data){
   })
 }
 exports.findCardByClass=function(callback, data){
-  con.query("SELECT * FROM card where C_class = ('Neutral', '"+data+"')", data, function(err, result){
+  con.query("SELECT * FROM card where C_class = 'Neutral' or c_class= '"+data+"')", data, function(err, result){
     callback(result)
   })
 }

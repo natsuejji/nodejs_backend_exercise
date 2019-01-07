@@ -17,9 +17,9 @@ exports.findCard = function(req, res)
         if(req.body[key]=="") continue;
         if(count==0){sqlstr+= 'where '}
         else {sqlstr+= 'and'}
-        if(key=="C_class") {sqlstr+= " C_class = 'Neutral' or C_class ='"+req.body[key]+"'"}
         if(key=="c_kind") {sqlstr+= " c_kind = '"+req.body[key]+"' "}
         if(key=="C_rare") {sqlstr+= " C_rare = '"+req.body[key]+"' "}
+        if(key=="C_class") {sqlstr+= " (C_class = 'Neutral' or C_class ='"+req.body[key]+"')"}
         if(key=="c_name") {sqlstr+= " c_name like '"+req.body[key]+"' "}
 
         count++;
